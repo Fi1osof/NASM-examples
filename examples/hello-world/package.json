@@ -1,0 +1,13 @@
+{
+  "name": "NASM-examples.Hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "./build/main",
+    "build": "yarn compile && yarn ld",
+    "compile": "nasm -f elf main.asm -o build/main.o",
+    "ld": "ld -m elf_i386 build/main.o -o build/main"
+  },
+  "author": "Fi1osof",
+  "license": "ISC"
+}
